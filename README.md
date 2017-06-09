@@ -20,6 +20,11 @@ Create file:
 touch README.md
 ```
 
+Create folder:
+```bash
+mkdir foldername
+```
+
 View contents of file:
 ```bash
 cat README.md
@@ -31,6 +36,13 @@ sudo <command>
 
 # Shortcut to repeat previous command with sudo
 sudo !!
+```
+
+grep (filter results in a list):
+```bash
+ls -la | grep "filename"
+
+# display list of files but filter "filename" only
 ```
 
 Change ownership of pem file:
@@ -86,9 +98,16 @@ SSH directory (store config and .pem files here):
 ~/.ssh
 ```
 
-SSH Command:
+SSH login command:
 ```bash
 ssh -i ~/.ssh/pemfile.pem ubuntu@<public ip address of ec2>
+```
+
+Exit SSH session:
+```bash
+exit
+
+# or repeatedly press ctrl+D or ctrl+C
 ```
 
 

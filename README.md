@@ -6,13 +6,12 @@ ls
 ls -la
 ```
 
-Delete file:
+Delete files/folders
 ```bash
-rm file_name
-```
+rm filename.txt
 
-Delete folder:
-```bash
+# Permanently delete folder and all subfolders and files inside
+# Warning: This cannot be undone, always double check before running this command
 rm -rf folder_name
 ```
 
@@ -37,6 +36,45 @@ sudo !!
 Change ownership of pem file:
 ```bash
 chmod 400 pemfile.pem
+```
+
+Read about Unix file permissions:
+- https://www.tutorialspoint.com/unix/unix-file-permission.htm
+- http://www.guru99.com/file-permissions.html
+
+Vim (terminal text editor)
+
+```bash
+vim filename.txt
+```
+
+(Learn VIM keystrokes/shortcuts here: http://www.openvim.com/)
+
+
+
+# Git
+```bash
+git status
+git log
+
+# Display the changes since last commit
+git diff
+git diff filename.txt
+git diff foldername
+
+# Pull changes
+git pull
+
+# Add, commit, push
+git add .
+git commit -m "Commit msg"
+git push
+
+# Remove all changes (return to previous commit)
+git reset --hard
+
+git stash
+git stash apply
 ```
 
 
